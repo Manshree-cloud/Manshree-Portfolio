@@ -1,3 +1,5 @@
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,9 +33,92 @@
   <!-- Projects -->
   <section id="projects" class="bg-gray-100 py-12">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-semibold mb-8 text-center">🚀 Featured Projects</h2>
+      <h2 class="text-3xl font-semibold mb-2 text-center">🚀 Featured Projects</h2>
+      <p class="text-center text-gray-600 mb-8">Hands-on builds focused on resiliency, Infrastructure as Code, and real-world AWS patterns.</p>
+
+
+        <!-- NEW: Multi-Region DR (IaC) - Professional Card -->
+       
+
+          <!-- Body -->
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-bold">Multi-Region Disaster Recovery on AWS (IaC)</h3>
+                <p class="text-gray-600 text-sm mt-1">Aug 2025 – Present</p>
+              </div>
+              <!-- Tags -->
+              <div class="hidden md:flex flex-wrap gap-2">
+                <span class="px-2 py-1 text-xs rounded-full bg-blue-50 text-blue-700">AWS</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-emerald-50 text-emerald-700">IaC</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-indigo-50 text-indigo-700">DR/HA</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-amber-50 text-amber-700">Cost-aware</span>
+              </div>
+            </div>
+
+            <!-- One-liner -->
+            <p class="mt-3 text-gray-700">
+              Active/standby across <strong>ca-central-1</strong> and <strong>us-east-1</strong> with
+              <strong>EC2/ASG</strong>, <strong>S3 Cross-Region Replication</strong>, optional <strong>RDS</strong>,
+              and <strong>CloudWatch→SNS</strong> alerts — fully deployed via <strong>CloudFormation</strong>.
+            </p>
+
+            <!-- Key outcomes -->
+            <ul class="mt-3 space-y-1 text-gray-700">
+              <li>• Client tester proves regional <strong>failover (200 OK)</strong> when primary scales to zero.</li>
+              <li>• <strong>Self-healing</strong> ASG; <strong>versioned & encrypted</strong> S3 CRR.</li>
+              <li>• <strong>Reproducible</strong>, auditable <strong>Infrastructure as Code</strong>.</li>
+            </ul>
+
+            <!-- Proof thumbnails -->
+            <div class="mt-4 grid grid-cols-2 gap-3">
+              <a href="assets/projects/aws-dr/day4-failover-after.png" target="_blank" rel="noopener"
+                 class="border rounded-lg overflow-hidden hover:opacity-90">
+                <img src="assets/projects/aws-dr/day4-failover-after.png" alt="Failover proof: secondary serving 200 OK" class="w-full h-28 object-cover">
+              </a>
+              <a href="assets/projects/aws-dr/day5-s3-dest.png" target="_blank" rel="noopener"
+                 class="border rounded-lg overflow-hidden hover:opacity-90">
+                <img src="assets/projects/aws-dr/day5-s3-dest.png" alt="S3 Cross-Region Replication: object in destination bucket" class="w-full h-28 object-cover">
+              </a>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-5 flex flex-wrap gap-3">
+              <a href="https://github.com/manshree-cloud/aws-multiregion-dr-architecture"
+                 class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-blue-700 border-blue-200 hover:bg-blue-50">
+                <span>View Repo</span>
+              </a>
+              <a href="assets/projects/aws-dr/architecture_slide_16x9_4k.png" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-gray-700 border-gray-200 hover:bg-gray-50">
+                <span>Diagram</span>
+              </a>
+              <a href="assets/projects/aws-dr/Multi-Region.pdf" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+                <span>Slide Deck (PDF)</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Serverless Enterprise SaaS -->
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition md:col-span-2">
+          <h3 class="text-xl font-bold mb-2">Serverless Enterprise SaaS Platform (CI/CD + Auth)</h3>
+          <p class="text-gray-600 text-sm mb-2">Aug 2025 - Present</p>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li>Built a <strong>serverless SaaS platform</strong> with <strong>API Gateway, Lambda, Cognito RBAC, DynamoDB, S3, and CloudFront</strong>.</li>
+            <li>Implemented <strong>CI/CD pipelines (CodePipeline + CodeBuild)</strong> to streamline and automate deployments.</li>
+            <li>Showcased an <strong>end-to-end enterprise-ready SaaS model</strong>, aligned with modern cloud-native practices.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+</section>
       <div class="grid gap-8 md:grid-cols-2">
-        <!-- Project Cards -->
+
+
+
+        <!-- AWS Amazon Connect Contact Center -->
         <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
           <h3 class="text-xl font-bold mb-2">AWS Amazon Connect Contact Center</h3>
           <p class="text-gray-600 text-sm mb-2">May - June 2025</p>
@@ -44,6 +129,7 @@
           </ul>
         </div>
 
+        <!-- AWS Expense Reimbursement System -->
         <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
           <h3 class="text-xl font-bold mb-2">AWS Expense Reimbursement System</h3>
           <p class="text-gray-600 text-sm mb-2">May 2025</p>
@@ -54,6 +140,7 @@
           </ul>
         </div>
 
+        <!-- AI-Powered Cloud Applications -->
         <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
           <h3 class="text-xl font-bold mb-2">AI-Powered Cloud Applications</h3>
           <p class="text-gray-600 text-sm mb-2">Mar – Apr 2025</p>
@@ -65,27 +152,7 @@
           </ul>
         </div>
 
-        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
-          <h3 class="text-xl font-bold mb-2">AWS Multi-Region Disaster Recovery Architecture</h3>
-          <p class="text-gray-600 text-sm mb-2">Aug 2025 – Present</p>
-          <ul class="list-disc pl-5 space-y-1 text-gray-700">
-            <li>Designed a <strong>fault-tolerant multi-region architecture</strong> with <strong>EC2, RDS Multi-AZ, Route 53 failover, S3 cross-region replication, CloudFront, and WAF</strong>.</li>
-            <li>Automated deployments using <strong>CloudFormation (IaC)</strong>.</li>
-            <li>Configured <strong>CloudWatch alarms</strong> and delivered a disaster recovery simulation demo validating failover.</li>
-          </ul>
-        </div>
-
-        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition md:col-span-2">
-          <h3 class="text-xl font-bold mb-2">Serverless Enterprise SaaS Platform (CI/CD + Auth)</h3>
-          <p class="text-gray-600 text-sm mb-2">Aug 2025 - Present</p>
-          <ul class="list-disc pl-5 space-y-1 text-gray-700">
-            <li>Built a <strong>serverless SaaS platform</strong> with <strong>API Gateway, Lambda, Cognito RBAC, DynamoDB, S3, and CloudFront</strong>.</li>
-            <li>Implemented <strong>CI/CD pipelines (CodePipeline + CodeBuild)</strong> to streamline and automate deployments.</li>
-            <li>Showcased an <strong>end-to-end enterprise-ready SaaS model</strong>, aligned with modern cloud-native practices.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+        
   </section>
 
   <!-- Skills & Certifications -->
@@ -127,3 +194,4 @@
 
 </body>
 </html>
+
