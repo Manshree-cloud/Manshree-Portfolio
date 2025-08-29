@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manshree Patel | Cloud Engineer Portfolio</title>
+    <!-- Tailwind CSS via CDN for quick prototyping -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom accent colours */
+      :root {
+        --accent: #0ea5e9;
+        --accent-light: #38bdf8;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-200 font-sans antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-900/80 border-b border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-white">Manshree Patel</h1>
+        <nav class="space-x-4 sm:space-x-6 text-gray-300 text-sm sm:text-base">
+          <a href="#projects" class="hover:text-white transition">Projects</a>
+          <a href="#skills" class="hover:text-white transition">Skills</a>
+          <a href="https://www.linkedin.com/in/manshree-patel" target="_blank" class="hover:text-white transition">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero/Summary -->
+    <section class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+      <div class="lg:flex lg:items-center lg:gap-10">
+        <div class="flex-1">
+          <h2 class="text-4xl sm:text-5xl font-bold leading-tight text-white mb-4">Cloud Professional</h2>
+          <p class="text-lg sm:text-xl leading-relaxed text-gray-300 mb-6">
+            I'm an <strong class="text-white">AWS-certified Cloud Engineer</strong> with 3+ years of professional experience in client support,
+            backend troubleshooting and cloud‑native solution development. I design and deploy scalable
+            architectures, build serverless applications and automate CI/CD pipelines with a strong focus on
+            automation, security and AI‑powered integrations. I'm actively building enterprise‑grade cloud
+            projects that showcase hands‑on expertise in <span class="text-white">AWS (Lambda, API Gateway,
+            DynamoDB, CloudFormation, S3, CloudFront, Cognito, Amazon Connect)</span> to deliver high‑availability
+            and business‑ready solutions.
+          </p>
+          <a href="#projects" class="inline-block mt-4 px-6 py-3 bg-[var(--accent)] text-gray-900 font-medium rounded-lg hover:bg-[var(--accent-light)] transition">
+            Explore Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-800 py-16 lg:py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-4 text-center">🚀 Featured Projects</h2>
+        <p class="text-center text-gray-400 max-w-3xl mx-auto mb-12">Hands‑on builds focused on resiliency,
+          Infrastructure as Code and real‑world AWS patterns.  Each project is fully reproducible via
+          Infrastructure as Code and follows AWS best practices.</p>
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Project: Multi-Region DR -->
+          <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xl font-bold text-white">Multi‑Region Disaster Recovery on AWS</h3>
+              <span class="text-sm text-gray-500">Aug 2025 – Present</span>
+            </div>
+            <p class="text-gray-400 mb-3">
+              Active/standby deployment across <strong>ca‑central‑1</strong> and <strong>us‑east‑1</strong> using EC2/ASG,
+              S3 cross‑region replication, optional RDS and CloudWatch→SNS alerts—fully deployed via
+              <strong>CloudFormation</strong>.
+            </p>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1">
+              <li>Demonstrated zero‑downtime regional failover with 200 OK responses.</li>
+              <li>Self‑healing Auto Scaling Groups and encrypted/versioned S3 replication.</li>
+              <li>Fully reproducible & auditable Infrastructure as Code.</li>
+            </ul>
+            <div class="flex flex-wrap gap-3 mt-4">
+              <a href="https://github.com/manshree-cloud/aws-multiregion-dr-architecture" target="_blank" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
+              <a href="assets/projects/aws-dr/architecture_slide_16x9_4k.png" target="_blank" class="px-4 py-2 text-sm rounded border border-gray-600 text-gray-300 hover:bg-gray-700 transition">Diagram</a>
+              <a href="assets/projects/aws-dr/Multi-Region.pdf" target="_blank" class="px-4 py-2 text-sm rounded border border-gray-600 text-gray-300 hover:bg-gray-700 transition">Slide Deck</a>
+            </div>
+          </div>
+
+          <!-- Project: Serverless SaaS -->
+          <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xl font-bold text-white">Serverless Enterprise SaaS Platform</h3>
+              <span class="text-sm text-gray-500">Aug 2025 – Present</span>
+            </div>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
+              <li>Built a serverless SaaS platform using <strong>API Gateway</strong>, <strong>Lambda</strong>, <strong>Cognito RBAC</strong>, <strong>DynamoDB</strong>, <strong>S3</strong> and <strong>CloudFront</strong>.</li>
+              <li>Implemented CI/CD pipelines with <strong>CodePipeline</strong> and <strong>CodeBuild</strong> for streamlined deployments.</li>
+              <li>Showcased an end‑to‑end enterprise‑ready SaaS model aligned with modern cloud‑native practices.</li>
+            </ul>
+            <div class="flex flex-wrap gap-3">
+              <a href="#" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
+            </div>
+          </div>
+
+          <!-- Project: Amazon Connect Contact Center -->
+          <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xl font-bold text-white">AWS Amazon Connect Contact Center</h3>
+              <span class="text-sm text-gray-500">May – Jun 2025</span>
+            </div>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
+              <li>Built a cloud‑based telecom contact center using <strong>Amazon Connect, Lex, Lambda & Cognito</strong>.</li>
+              <li>Designed dynamic IVR flows and integrated CloudWatch monitoring.</li>
+              <li>Documented enterprise‑grade architecture simulating real‑world telecom use cases.</li>
+            </ul>
+            <div class="flex flex-wrap gap-3">
+              <a href="#" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
+            </div>
+          </div>
+
+          <!-- Project: Expense Reimbursement System -->
+          <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xl font-bold text-white">AWS Expense Reimbursement System</h3>
+              <span class="text-sm text-gray-500">May 2025</span>
+            </div>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
+              <li>Developed a serverless application using <strong>CloudFormation</strong>, <strong>Lambda</strong>, <strong>Cognito</strong> and <strong>API Gateway</strong>.</li>
+              <li>Enabled secure, encrypted file uploads to S3 with RBAC‑based authentication.</li>
+              <li>Achieved an 80% improvement in infrastructure deployment speed; delivered live demos.</li>
+            </ul>
+            <div class="flex flex-wrap gap-3">
+              <a href="#" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
+            </div>
+          </div>
+
+          <!-- Project: AI‑Powered Cloud Applications -->
+          <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition md:col-span-2">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xl font-bold text-white">AI‑Powered Cloud Applications</h3>
+              <span class="text-sm text-gray-500">Mar – Apr 2025</span>
+            </div>
+            <p class="text-gray-400 mb-2">A suite of experiments integrating AWS AI/ML services:</p>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1">
+              <li><strong>Image Labels Generator</strong>: Automated image tagging with Amazon Rekognition.</li>
+              <li><strong>Text Narrator</strong>: Enhanced accessibility using Amazon Polly TTS.</li>
+              <li><strong>Translation Bot</strong>: Built a multilingual chatbot with Lex & Translate.</li>
+              <li><strong>Bucket List Tracker</strong>: Deployed on Amplify with a fully serverless backend.</li>
+            </ul>
+            <div class="flex flex-wrap gap-3 mt-4">
+              <a href="#" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Certifications Section -->
+    <section id="skills" class="bg-gray-900 py-16 lg:py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-10 text-center">💻 Skills & Certifications</h2>
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Skills Card -->
+          <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+            <h3 class="text-2xl font-bold text-white mb-4">Skills</h3>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1">
+              <li>Cloud Platforms: AWS (EC2, Lambda, S3, API Gateway, DynamoDB, CloudFront, WAF, Cognito, Amazon Connect), with familiarity in Azure & GCP</li>
+              <li>Infrastructure & DevOps: Terraform, CloudFormation, CodePipeline, CodeBuild, GitHub Actions</li>
+              <li>Programming & Scripting: Python (Flask, REST APIs, Boto3), Bash</li>
+              <li>Monitoring & Logging: CloudWatch, SNS, CloudTrail, Datadog</li>
+              <li>Networking & Security: VPC, VPN, load balancing, subnets, IAM, KMS, firewalls</li>
+            </ul>
+          </div>
+          <!-- Certifications Card -->
+          <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+            <h3 class="text-2xl font-bold text-white mb-4">Certifications</h3>
+            <ul class="list-disc pl-5 text-gray-400 space-y-1">
+              <li>AWS Solutions Architect – Associate, Jun 2025</li>
+              <li>AWS AI Practitioner, Feb 2025</li>
+              <li>AWS Cloud Practitioner, Aug 2024</li>
+              <li>Cisco CCNA Routing & Switching, Dec 2018</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-8 text-center">
+      <p class="text-gray-500 text-sm">© 2025 Manshree Patel | Cloud Engineer Portfolio</p>
+    </footer>
+  </body>
+</html>
