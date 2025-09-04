@@ -51,6 +51,7 @@
     <!-- Projects Section -->
     <section id="projects" class="bg-gray-800 py-16 lg:py-20">
       <div class="max-w-6xl mx-auto px-6">
+
         <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-4 text-center">🚀 Featured Projects</h2>
         <p class="text-center text-gray-400 max-w-3xl mx-auto mb-12">Hands‑on builds focused on resiliency,
           Infrastructure as Code and real‑world AWS patterns.  Each project is fully reproducible via
@@ -60,7 +61,7 @@
           <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
             <div class="flex items-center justify-between mb-3">
               <h3 class="text-xl font-bold text-white">Multi‑Region Disaster Recovery on AWS</h3>
-              <span class="text-sm text-gray-500">Aug 2025 – Present</span>
+              <span class="text-sm text-gray-500">June 2025 – Present</span>
             </div>
             <p class="text-gray-400 mb-3">
               Active/standby deployment across <strong>ca‑central‑1</strong> and <strong>us‑east‑1</strong> using EC2/ASG,
@@ -94,6 +95,43 @@
               <a href="#" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
             </div>
           </div>
+
+<!-- Project: AWS Rekognition Labels Generator -->
+<div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
+  <div class="flex items-center justify-between mb-3">
+    <h3 class="text-xl font-bold text-white">AWS Rekognition Labels Generator</h3>
+    <span class="text-sm text-gray-500">Sep 2025</span>
+  </div>
+
+  <p class="text-gray-400 mb-3">
+    Image recognition with <strong>Amazon Rekognition + S3 + Python (boto3)</strong>. 
+    Upload an image to S3, run the script, and get back <strong>labels + confidence scores</strong>.
+    Demonstrates cloud architecture, serverless AI services, and automation.
+  </p>
+
+  <!-- Mini highlights -->
+  <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
+    <li>End-to-end flow: S3 ➜ Rekognition <code class="text-gray-300">DetectLabels</code> ➜ CLI/visual output</li>
+    <li>Includes <strong>visual version</strong> with bounding boxes (matplotlib + PIL)</li>
+    <li>Free-Tier friendly; runs in ~30 minutes with minimal IAM permissions</li>
+  </ul>
+
+  <!-- Preview images -->
+  <div class="grid grid-cols-2 gap-3 mb-4">
+    <a href="assets/projects/rekognition/architecture.png" target="_blank" class="block overflow-hidden rounded-lg border border-gray-700">
+      <img src="assets/projects/rekognition/architecture.png" alt="Architecture" class="w-full h-32 object-cover hover:scale-[1.02] transition" />
+    </a>
+    <a href="assets/projects/rekognition/sample.png" target="_blank" class="block overflow-hidden rounded-lg border border-gray-700">
+      <img src="assets/projects/rekognition/sample.png" alt="Sample Output" class="w-full h-32 object-cover hover:scale-[1.02] transition" />
+    </a>
+  </div>
+
+  <!-- Action buttons -->
+  <div class="flex flex-wrap gap-3">
+    <a href="https://github.com/Manshree-cloud/aws-rekognition-labels-generator" target="_blank" class="px-4 py-2 text-sm rounded border border-gray-600 text-[var(--accent)] hover:bg-gray-700 transition">Repo</a>
+    <a href="https://github.com/Manshree-cloud/aws-rekognition-labels-generator#readme" target="_blank" class="px-4 py-2 text-sm rounded border border-gray-600 text-gray-300 hover:bg-gray-700 transition">README</a>
+  </div>
+</div>
 
           <!-- Project: Amazon Connect Contact Center -->
           <div class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:shadow-2xl transition">
